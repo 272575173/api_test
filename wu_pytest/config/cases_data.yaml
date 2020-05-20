@@ -1,0 +1,20 @@
+-
+    casename: login
+    method: post
+    api_name: /offshore/login/index
+    data:
+        account: wu555
+        password: wu12345
+    headers:
+    assert:
+        msg: ok
+        code: 200
+##        access_token:
+    extract: {'token_name':'access_token'}
+-
+    casename: user/list
+    method: post
+    api_name: /offshore/user/index
+    data:
+    headers:
+    assert: {'username':'Wu555','code':'200',}
