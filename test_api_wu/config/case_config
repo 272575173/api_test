@@ -1,0 +1,2 @@
+[MODE]
+mode={'login':'all', 'user':[1,2,3]}
